@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.border{
+    border: 2px #000 solid;
+    padding: 5px 10px 0 10px;
+    display: grid;
+    row-gap: 10px;
+    padding: 10px 10px;
+}
+
+input{
+    width: 100%;
+    padding: 10px 0;
+    text-align: right;
+}
+
+.number{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.button-number, .button-zapytaya{
+    width: 100%;
+    padding: 5px 20px;
+    background-color: #d9dad7;
+    border: 1px #000 solid;
+}
+
+.button-number:hover, .button-zapytaya:hover{
+    background-color: #c0c1bd;
+}
+
+.button-number:active, .button-zapytaya:active{
+    background-color: #d9dad7;
+}
+
+.delete{
+    width: 100%;
+    padding: 5px 20px;
+    border: 1px #000 solid;
+    color: #fff;
+    background-color: #ea0000;
+}
+
+.delete:hover{
+    background-color: #bf0000;
+}
+
+.delete:active{
+    background-color: #ea0000;
+}
+
+.plus, .minus, .decimal, .equal{
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #747474;
+    border: 1px #000 solid;
+    color: #e4e4e4;
+}
+
+.plus:hover, .minus:hover, .decimal:hover, .equal:hover{
+    background-color: #8a8a8a;
+}
+
+.plus:active, .minus:active, .decimal:active, .equal:active{
+    background-color: #747474;
+}
