@@ -65,7 +65,7 @@ input{
     background-color: #ea0000;
 }
 
-.plus, .minus, .decimal, .equal{
+.action{
     width: 100%;
     padding: 5px 10px;
     background-color: #747474;
@@ -73,10 +73,10 @@ input{
     color: #e4e4e4;
 }
 
-.plus:hover, .minus:hover, .decimal:hover, .equal:hover{
+.action:hover{
     background-color: #8a8a8a;
 }
 
-.plus:active, .minus:active, .decimal:active, .equal:active{
+.action:active{
     background-color: #747474;
 }

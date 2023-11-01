@@ -22,19 +22,36 @@ document.addEventListener('DOMContentLoaded', function(){
         try {
             input.value = eval(input.value);
         } catch(error) {
-            input.value = 'Ошибка';
+            alert('Ошибка');
+            input.value = '';
         }
     });
 
     document.querySelector('.plus').addEventListener('click', function() {
-        input.value += '+';
+        input.value += ' + ';
     });
     
     document.querySelector('.minus').addEventListener('click', function() {
-        input.value += '-';
+        input.value += ' - ';
     });
     
     document.querySelector('.decimal').addEventListener('click', function() {
-        input.value += '/';
+        input.value += ' / ';
+    });
+
+    document.querySelector('.multiply').addEventListener('click', function() {
+        input.value += ' * ';
+    });
+
+    document.querySelector('.pi').addEventListener('click', function() {
+        input.value += '3.14';
+    });
+
+    document.querySelector('.l-bracket').addEventListener('click', function() {
+        input.value += '(';
+    });
+
+    document.querySelector('.r-bracket').addEventListener('click', function() {
+        input.value += ')';
     });
 });
